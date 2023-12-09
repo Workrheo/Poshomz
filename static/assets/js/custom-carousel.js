@@ -25,38 +25,6 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
-    var owl = $('.service-section .owl-carousel');
-    owl.owlCarousel({
-        margin: 30,
-        nav: false,
-        loop: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 4500,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2.2
-            },
-            768: {
-                items: 2.2
-            },
-            992: {
-                items: 3.2
-            },
-            1200: {
-                items: 3.2
-            },
-            1440:{
-                items: 4.2
-            }
-        }
-    })
-})
-
-$(document).ready(function() {
     var owl = $('.testimonial-section .owl-carousel');
     owl.owlCarousel({
         margin: 30,
@@ -73,19 +41,19 @@ $(document).ready(function() {
                 items: 1
             },
             768: {
-                items: 1
+                items: 2
             },
             992: {
-                items: 1
+                items: 2
             }
         }
     })
 })
 
 $(document).ready(function() {
-    var owl = $('.image-section .owl-carousel');
+    var owl = $('.blog-section .owl-carousel');
     owl.owlCarousel({
-        margin: 10,
+        margin: 30,
         nav: false,
         loop: true,
         dots: true,
@@ -102,61 +70,100 @@ $(document).ready(function() {
                 items: 3
             },
             992: {
+                items: 3
+            }
+        }
+    })
+})
+
+$('.recentwork-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    items:1,
+    lazyLoad: true,
+    dots: true,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:1,
+            stagePadding: 0
+        },
+        391:{
+            items:1,
+            stagePadding: 0
+        },
+        576:{
+            items:1,
+            stagePadding: 100
+        },
+        600:{
+            items:1,
+            stagePadding: 150
+        },
+        791:{
+            items:1,
+            stagePadding: 200
+        },
+        1000:{
+            items:1,
+            stagePadding: 200
+        },
+        1200:{
+            items:1,
+            stagePadding: 250
+        },
+        1400:{
+            items:1,
+            stagePadding: 300
+        },
+        1600:{
+            items:1,
+            stagePadding: 350
+        },
+        1800:{
+            items:1,
+            stagePadding: 470
+        }
+    }
+})
+
+$(document).ready(function() {
+    var owl = $('.partner-section .owl-carousel');
+    owl.owlCarousel({
+        margin: 30,
+        nav: false,
+        loop: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        responsive: {
+            0: {
+                items: 2
+            },
+            576: {
+                items: 3
+            },
+            768: {
+                items: 4
+            },
+            992: {
                 items: 4
             }
         }
     })
 })
 
-$(document).ready(function() {
-    var owl = $('.articles-section .owl-carousel');
-    owl.owlCarousel({
-        margin: 30,
-        nav: true,
-        loop: true,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 4500,
-        responsive: {
-            0: {
-                items: 1
-            },
-            435: {
-                items: 1.6
-            },
-            576: {
-                items: 2
-            },
-            620: {
-                items: 2.3
-            },
-            715: {
-                items: 2.5
-            },
-            768: {
-                items: 2.3
-            },
-            992: {
-                items: 2.5
-            },
-            1200: {
-                items: 2.5
-            },
-            1300: {
-                items: 3.4
-            },
-            1400: {
-                items: 3.5
-            },
-            1500: {
-                items: 3.3
-            },
-            1620: {
-                items: 3.4
-            },
-            1760:{
-                items: 3.6
-            }
-        }
-    })
-})
+// About counter
+
+$(function() {
+$('.chart').easyPieChart({
+    size: 350,
+    barColor: '#e1b261',
+    scaleLength: 0,
+    lineWidth: 10,
+    trackColor: "#5c5c5e",
+    lineCap: "circle",
+    animate: 2000,
+});
+});

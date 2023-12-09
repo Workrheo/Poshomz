@@ -7,7 +7,7 @@
 .sidebar .widget-title,
 .sidebar > h4,
 .page-title h1{
-    color: var(--e-global-color-secondary);
+    color: var(--e-global-color-white);
 }
 .color01,.color01 a{
     color: #777;
@@ -31,7 +31,7 @@
 .pagination .page-item:not(.disabled):hover > .page-link,
 .pagination .page-item:not(.disabled) > .page-link,
 #blog .post-item.border .post-item-wrap .post-item-description a{
-    color: var(--e-global-color-secondary);
+    color: var(--e-global-color-primary);
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
@@ -105,11 +105,11 @@
 }
 .sidebar .widget {
     /* border-bottom: 1px solid #eee; */
-    border-bottom: 1px solid var(--e-global-color-light-gray);
+    border-bottom: 1px solid var(--e-global-color-very-dark-grayish-blue);
     border-radius: 0;
 }
 .sidebar .nav-tabs,.sidebar .nav-tabs .nav-link {
-    border-bottom: 2px solid var(--e-global-color-light-gray);
+    border-bottom: 2px solid var(--e-global-color-very-dark-grayish-blue);
 }
 .sidebar .nav-tabs .nav-link.active {
     background-color: transparent;
@@ -117,7 +117,7 @@
 }
 .sidebar .post-thumbnail-entry,
 .sidebar .widget-categories ul li{
-    border-bottom: 1px solid var(--e-global-color-light-gray);
+    border-bottom: 1px solid var(--e-global-color-very-dark-grayish-blue);
 }
 .sidebar .post-thumbnail-entry .post-category,
 .sidebar .post-thumbnail-entry .post-date {

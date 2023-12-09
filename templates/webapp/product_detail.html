@@ -3,31 +3,31 @@
 
 {% load static %}
 
-
 {% block body %}
 
-
-<div class="social-icons position-relative">
-    <ul class="list-unstyled mb-0 position-absolute">
-        <li><a href="#" class="text-decoration-none"><i class="fa-brands fa-twitter social-networks"></i></a></li>
-        <li><a href="#" class="text-decoration-none"><i class="fa-brands fa-facebook-f social-networks"></i></a></li>
-        <li><a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram social-networks"></i></a></li>
-        <li><a href="#" class="text-decoration-none"><i class="fa-brands fa-linkedin-in social-networks"></i></a></li>
-    </ul>
-</div>
-<section class="sub-banner_section">
-    <figure class="banner-backgroundimage mb-0">
-        <img src="{% static 'assets/images/Contact-us-banner-image.jpg' %}" alt="" class="img-fluid">
-    </figure>
+            
+<section class="banner-section">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12 col-12">
-                <div class="banner_content" data-aos="fade-up">
-                    <h1>{{product_detail}} products</h1>
-                   
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
+                <div class="banner_content" data-aos="fade-left">
+                    <div class="content">
+                        <h1>Three Column</h1>
+                        <p>Nuis aute irure dolor in rearehenderit in eouta velireu esse fugiat nulla pariatur.</p>
+                        <div class="box">
+                            <span class="mb-0">Home</span>
+                            <span class="mb-0 dash">-</span>
+                            <span class="mb-0 box_span">Aristo Product Categories/span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-xl-7 col-lg-6 col-md-4 col-sm-12 col-12 d-lg-block d-none">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
+                <div class="banner_wrapper">
+                    <figure class="sub-bannerimage mb-0" data-aos="fade-up">
+                        <img src="{% static 'assets/images/about-bannerimage.jpg' %}" alt="" class="img-fluid">
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
@@ -35,50 +35,261 @@
 </div>
 <!-- MAIN SECTION -->
 <!--End Slider Section-->
-<div class=" blog-posts blogpage-section">
+<section class="blog-posts blogpage-section">
 <div class="container">
     <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
         <div id="blog" class="col-xl-12">
+            <!-- threecolumn-blog  -->
             <div class="row">
 
-                {% for details in product_list %}
+
+                
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="blog-box blog-box1">
 
 
-                <div class="col-xl-6">
-                    <div class="blog-box twocolumn-blog float-left w-100 post-item mb-4">
-                        <div class="post-item-wrap position-relative">
-                            <div class="post-image">
-                                <a href="#">
-                                    <img
-                                        width="1920"
-                                    height="800"
-                                    class="img-fluid"
-                                    src="{{ details.image.url }}"
-                                    alt="project-01"
-                                  />
-                                </a>
-                            </div>
-                            <div class="lower-portion">
-                                <i class="fa-solid fa-user"></i>
-                                <span class="text-size-14 text-mr">By : Aristo </span>
-                                <i class="tag-mb fa-solid fa-tag"></i>
-                                <span class="text-size-14">{{details.product_name}}</span>
-                               
+                        {% for details in product_list %}
+
+
+                        <figure class="blog-image mb-0">
+                            <img src="{{details.image.url}}" alt="" class="img-fluid">
+                        </figure>
+                        <div class="lower-portion">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="text-size-14 text-mr">By : Admin</span>
+                            <i class="tag-mb fa-solid fa-tag"></i>
+                            <span class="text-size-14">Virtual Assistant</span>
+                            <h5 class="text-white">{{details.category_name}}</h5>
+                        </div>
+                        <div class="button-portion ">
+                            <div class="date">
                                 <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
-                                <span class="mb-0 text-size-14">{{details.created_at.date}}</span>
-                                
+                                <span class="mb-0 text-size-14">Dec 20,2022</span>
                             </div>
+                            <div class="button">
+                                <a class="mb-0 read_more text-decoration-none" href="./single-blog.html">Read More</a>
+                            </div>
+                        </div>
+
+                        
+                        {% endfor %}
+                    </div>
+                 
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Testimonial -->
+<section class="testimonial-section">
+<figure class="light-image mb-0">
+    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
+</figure>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="testimonial_content">
+                <h6>Testimonials</h6>
+                <h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="box">
+                    <div class="image">
+                        <figure class="testimonial-image mb-0">
+                            <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
+                        </figure>
+                        <figure class="quote-icon mb-0">
+                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
+                        </figure>
+                    </div>                    
+                    <div class="box-content">
+                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
+                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                        </ul>
+                        <div class="lower-portion">
+                            <span class="text-white text-size-16">Kevin Andrew</span>
+                            <span class="text-size-14">Happy Customer</span>
+                            <figure class="quote-image mb-0">
+                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
+                            </figure>
                         </div>
                     </div>
                 </div>
-
-                {% endfor %}
-            
-             </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="image">
+                        <figure class="testimonial-image mb-0">
+                            <img src="{% static 'assets/images/testimonial-image2.png' %}" class="img-fluid" alt="">
+                        </figure>
+                        <figure class="quote-icon mb-0">
+                            <img src="./assets/images/quote-icon.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>                    
+                    <div class="box-content">
+                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
+                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                        </ul>
+                        <div class="lower-portion">
+                            <span class="text-white text-size-16">Alina James</span>
+                            <span class="text-size-14">Happy Customer</span>
+                            <figure class="quote-image mb-0">
+                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="image">
+                        <figure class="testimonial-image mb-0">
+                            <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
+                        </figure>
+                        <figure class="quote-icon mb-0">
+                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
+                        </figure>
+                    </div>                    
+                    <div class="box-content">
+                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
+                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                        </ul>
+                        <div class="lower-portion">
+                            <span class="text-white text-size-16">Kevin Andrew</span>
+                            <span class="text-size-14">Happy Customer</span>
+                            <figure class="quote-image mb-0">
+                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="image">
+                        <figure class="testimonial-image mb-0">
+                            <img src="{% static 'assets/images/testimonial-image2.png' %}" class="img-fluid" alt="">
+                        </figure>
+                        <figure class="quote-icon mb-0">
+                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
+                        </figure>
+                    </div>                    
+                    <div class="box-content">
+                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
+                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                        </ul>
+                        <div class="lower-portion">
+                            <span class="text-white text-size-16">Alina James</span>
+                            <span class="text-size-14">Happy Customer</span>
+                            <figure class="quote-image mb-0">
+                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="image">
+                        <figure class="testimonial-image mb-0">
+                            <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
+                        </figure>
+                        <figure class="quote-icon mb-0">
+                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
+                        </figure>
+                    </div>                    
+                    <div class="box-content">
+                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
+                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                        </ul>
+                        <div class="lower-portion">
+                            <span class="text-white text-size-16">Kevin Andrew</span>
+                            <span class="text-size-14">Happy Customer</span>
+                            <figure class="quote-image mb-0">
+                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="image">
+                        <figure class="testimonial-image mb-0">
+                            <img src="{% static 'assets/images/testimonial-image2.png' %}" class="img-fluid" alt="">
+                        </figure>
+                        <figure class="quote-icon mb-0">
+                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
+                        </figure>
+                    </div>                    
+                    <div class="box-content">
+                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
+                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                        </ul>
+                        <div class="lower-portion">
+                            <span class="text-white text-size-16">Alina James</span>
+                            <span class="text-size-14">Happy Customer</span>
+                            <figure class="quote-image mb-0">
+                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+</section>
 
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-size-14">Copyright © 2023 merrakiinteriors All rights reserved.</p>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
+</section>
 
 {% endblock body %}
