@@ -88,25 +88,25 @@
         <div class="col-12">
             <div class="testimonial_content" data-aos="fade-right">
                 <h6>Testimonials</h6>
-                <h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2>
+             <!--   <h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
             </div>
         </div>
     </div>
     <div class="row">
         <div class="owl-carousel owl-theme">
+            {% for details in testimonials %}
             <div class="item">
                 <div class="box">
-                    <div class="image">
+                  <!--- <div class="image">
                         <figure class="testimonial-image mb-0">
                             <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
                         </figure>
                         <figure class="quote-icon mb-0">
                             <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
                         </figure>
-                    </div>                    
+                    </div>             -->       
                     <div class="box-content">
-                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
-                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
+                        <p class="text-size-18">{{details.content}}</p>
                         <ul class="list-unstyled mb-0">
                             <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
                             <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
@@ -115,165 +115,16 @@
                             <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
                         </ul>
                         <div class="lower-portion">
-                            <span class="text-white text-size-16">Kevin Andrew</span>
+                            <span class="text-white text-size-16">{{details.name}}</span>
                             <span class="text-size-14">Happy Customer</span>
                             <figure class="quote-image mb-0">
-                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
+                                <img src="{{details.image.url}}" class="img-fluid" alt="">
                             </figure>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="box">
-                    <div class="image">
-                        <figure class="testimonial-image mb-0">
-                            <img src="{% static 'assets/images/testimonial-image2.png' %}" class="img-fluid" alt="">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>                    
-                    <div class="box-content">
-                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
-                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">Alina James</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="box">
-                    <div class="image">
-                        <figure class="testimonial-image mb-0">
-                            <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>                    
-                    <div class="box-content">
-                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
-                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">Kevin Andrew</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="box">
-                    <div class="image">
-                        <figure class="testimonial-image mb-0">
-                            <img src="{% static 'assets/images/testimonial-image2.png' %}" class="img-fluid" alt="">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>                    
-                    <div class="box-content">
-                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
-                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">Alina James</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="box">
-                    <div class="image">
-                        <figure class="testimonial-image mb-0">
-                            <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>                    
-                    <div class="box-content">
-                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
-                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">Kevin Andrew</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="box">
-                    <div class="image">
-                        <figure class="testimonial-image mb-0">
-                            <img src="{% static 'assets/images/testimonial-image2.png' %}" class="img-fluid" alt="">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>                    
-                    <div class="box-content">
-                        <p class="text-size-18">Duis aute irure dolor in reprehender in voluptate velit esse
-                            cillum dolore fugiat nulla pariatur excepteur sintoa caecat cupidata proident...</p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">Alina James</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{% static 'assets/images/quote-image.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
@@ -288,8 +139,8 @@
                 <h2>Start Your Customer Journey With Us.</h2>
             </div>
             <div class="journey-button">
-                <a class="get_started text-decoration-none" href="./contact.html">Get Started</a>
-                <a class="image-button text-decoration-none" href="./contact.html">
+                <a class="get_started text-decoration-none" href="{% url 'webapp:contact' %}">Get Started</a>
+                <a class="image-button text-decoration-none" href="{% url 'webapp:contact' %}">
                     <figure class="arrow mb-0">
                         <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
                     </figure>
@@ -301,136 +152,44 @@
 </section>
 <!-- Blog -->
 <section class="blog-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="blog_content" data-aos="fade-up">
-                <h6>Latest News</h6>
-                <h2>Our Recent Blog Posts</h2>
+    <figure class="light-image mb-0">
+        <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
+    </figure>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog_content" data-aos="fade-up">
+                    <h6>Latest News</h6>
+                    <h2>Our Recent Blog Posts</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="carousel-content">
-            <div class="carousel-outer">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image1.jpg' %}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">Mar 20, 2021</span>
-                                <h5 class="text-white">Capturing the Essence of Home to Modern</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
+        <div class="row">
+            <div class="carousel-content">
+                <div class="carousel-outer">
+                    <div class="owl-carousel owl-theme">
+    
+                   {% for details in product_list %} 
+    
+                        <div class="item">
+                            <div class="image">
+                                <figure class="mb-0">
+                                    <img src="{{details.image.url}}" class="img-fluid" alt="">
+                                </figure>
+                                <div class="box-content">
+                                    <span class="text-size-16">{{details.created_at.date}}</span>
+                                    <h5 class="text-white">{{details.category_name}}</h5>
+                                   <!-- <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image2.jpg' }" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">Apr 19, 2021</span>
-                                <h5 class="text-white">Renovation of Architec and Design</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image3.jpg' %}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">June 22, 2021</span>
-                                <h5 class="text-white">Reclaimed Wolid for the Modern</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image1.jpg' %}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">Mar 20, 2021</span>
-                                <h5 class="text-white">Capturing the Essence of Home to Modern</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image2.jpg' %}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">Apr 19, 2021</span>
-                                <h5 class="text-white">Renovation of Architec and Design</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image3.jpg' %}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">June 22, 2021</span>
-                                <h5 class="text-white">Reclaimed Wolid for the Modern</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image1.jpg' %}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">Mar 20, 2021</span>
-                                <h5 class="text-white">Capturing the Essence of Home to Modern</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image2.jpg' %}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">Apr 19, 2021</span>
-                                <h5 class="text-white">Renovation of Architec and Design</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{% static 'assets/images/blog-image3.jpg' %}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">June 22, 2021</span>
-                                <h5 class="text-white">Reclaimed Wolid for the Modern</h5>
-                                <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p>
-                            </div>
-                        </div>
+                      {% endfor %} 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</section>
+    </section>
 <div class="copyright">
     <div class="container">
         <div class="row">
