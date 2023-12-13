@@ -160,16 +160,18 @@
             <div class="col-12">
                 <div class="blog_content" data-aos="fade-up">
                     <h6>Latest News</h6>
-                    <h2>Our Recent Blog Posts</h2>
+                    <h2>Our Recent Blogs</h2>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="carousel-content">
+                {% for details in post_list %}
                 <div class="carousel-outer">
+
                     <div class="owl-carousel owl-theme">
     
-                   {% for details in product_list %} 
+                        
     
                         <div class="item">
                             <div class="image">
@@ -178,14 +180,15 @@
                                 </figure>
                                 <div class="box-content">
                                     <span class="text-size-16">{{details.created_at.date}}</span>
-                                    <h5 class="text-white">{{details.category_name}}</h5>
+                                    <h5 class="text-white">{{details.title}}</h5>
                                    <!-- <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
                                 </div>
                             </div>
                         </div>
-                      {% endfor %} 
+                     
                     </div>
                 </div>
+                {% endfor %} 
             </div>
         </div>
     </div>

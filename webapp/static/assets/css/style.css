@@ -758,7 +758,11 @@ to {
 .work-section .work_content .year{
     position: relative;
 }
-.work-section .work_content .year::before{
+/* .col-12.md-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  }-section .work_content .year::before{
     content: "";
     position: absolute;
     background: url(../images/blog-image1.jpg);

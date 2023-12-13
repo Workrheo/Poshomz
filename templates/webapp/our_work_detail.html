@@ -13,14 +13,12 @@
             <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
                 <div class="banner_content" data-aos="fade-left">
                     <div class="content">
-                        <h1>{{our_work_detail}} </h1>
-                        <!--<p>Your bedroom is one of the most important rooms in your home - the place where you start and end your day. Thus, it becomes imperative that your bedroom reflects your style and inspires you every single day! How can you make your bedroom inspirational.
-
-                           </p> -->
+                        <h1>{{our_work_detail}} Designs </h1>
+                       <!--<p>Guis aute irure dolor in rearehenderit in eouta velireu esse fugiat nulla pariatur.</p> -->
                         <div class="box">
                             <span class="mb-0">Home</span>
                             <span class="mb-0 dash">-</span>
-                            <span class="mb-0 box_span">Products</span>
+                            <span class="mb-0 box_span">Portfolio</span>
                         </div>
                     </div>
                 </div>
@@ -43,109 +41,84 @@
         <div class="col-12">
             <div class="subheading" data-aos="fade-right">
                 <h6>What’s New</h6>
-                <h2>Recent Work We Have Done</h2>
+                <h2>Recent Designs We Have Done</h2>
             </div>
         </div>
     </div>
-    <div class="tabs-box tabs-options">
-       
+   
+
+   
         <div class="tab-content">
             <div id="all" class="tab-pane fade in active show">
                 <div class="row position-relative" data-aos="fade-up">
+                    {% for details in our_work_images %}
                     <div class="col-lg-4 col-md-4 col-sm-4 col-12">
                         <div class="image">
                             <figure class="tab-image mb-0">
-                                <img src="{% static 'assets/images/tab-image1.jpg' %}" class="img-fluid" alt="">
+                                <img src="{{details.image.url}}" class="img-fluid" alt="">
                             </figure>
-                            <!-- <div class="box-content">
-                                <div class="content">
-                                    <span class="text-white text-size-16">Interior – Luxury Living</span>
-                                    <h4 class="text-white">Kawa - Glamorous Penthouse</h4> -->
-                                  <!---  <a class="text-decoration-none" href=""> -->
-                                       <!-- <figure class="arrow mb-0"> -->
-                                           <!-- <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid"> -->
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
+                            
                         </div>
-                    </div>            
-                    
+                    </div> 
+                    {% endfor %}
                 </div>
-            </div>
-            
+            </div>  
         </div>
-    </div>
+       
+   
 </div>
 </section>
 <!-- Testimonial -->
 <section class="testimonial-section">
-    <figure class="light-image mb-0">
-        <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-    </figure>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="testimonial_content" data-aos="fade-right">
-                    <h6>Testimonials</h6>
-                    <!--<h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="owl-carousel owl-theme">
-               
-              
-                {% for details in testimonials %}
-                <div class="item">
-                    <div class="box">
-                       <!-- <div class="image">
-                            <figure class="testimonial-image1 mb-0">
-                                <img src="{{details.image.url}}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image2 mb-0">
-                                <img src="{{details.image.url}}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image3 mb-0">
-                                <img src="{% static 'assets/images/testimonial-5.png' %}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image4 mb-0">
-                                <img src="{% static 'assets/images/testimonial-3.png' %}" alt="" class="img-fluid">
-                            </figure>
-                            <figure class="testimonial-image5 mb-0">
-                                <img src="{% static 'assets/images/testimonial-4.png' %}" alt="" class="img-fluid">
-                            </figure>
-                            <figure class="quote-icon mb-0">
-                                <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>     -->               
-                        <div class="box-content">
-                            <p class="text-size-18">
-                                {{details.content}}
-                              </p>
-                            <ul class="list-unstyled mb-0">
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            </ul>
-                            <div class="lower-portion">
-                                <span class="text-white text-size-16">{{details.name}}</span>
-                                <span class="text-size-14">Happy Customer</span>
-                                <figure class="quote-image mb-0">
-                                    <img src="{{details.image.url}}" class="img-fluid" alt="">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-                
+<figure class="light-image mb-0">
+    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
+</figure>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="testimonial_content" data-aos="fade-right">
+                <h6>Testimonials</h6>
+             <!--   <h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
             </div>
         </div>
     </div>
-    </section>
+    <div class="row">
+        <div class="owl-carousel owl-theme">
+            {% for details in testimonials %}
+            <div class="item">
+                <div class="box">
+                  <!--- <div class="image">
+                        <figure class="testimonial-image mb-0">
+                            <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
+                        </figure>
+                        <figure class="quote-icon mb-0">
+                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
+                        </figure>
+                    </div>             -->       
+                    <div class="box-content">
+                        <p class="text-size-18">{{details.content}}</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
+                        </ul>
+                        <div class="lower-portion">
+                            <span class="text-white text-size-16">{{details.name}}</span>
+                            <span class="text-size-14">Happy Customer</span>
+                            <figure class="quote-image mb-0">
+                                <img src="{{details.image.url}}" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</section>
 <!-- Journey -->
 <section class="journey-section">
 <div class="container">
@@ -156,8 +129,8 @@
                 <h2>Start Your Customer Journey With Us.</h2>
             </div>
             <div class="journey-button">
-                <a class="get_started text-decoration-none" href="./contact.html">Get Started</a>
-                <a class="image-button text-decoration-none" href="./contact.html">
+                <a class="get_started text-decoration-none" href="{% url 'webapp:contact' %}">Get Started</a>
+                <a class="image-button text-decoration-none" href="{% url 'webapp:contact' %}">
                     <figure class="arrow mb-0">
                         <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
                     </figure>
@@ -169,43 +142,47 @@
 </section>
 <!-- Blog -->
 <section class="blog-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="blog_content" data-aos="fade-up">
-                <h6>Latest News</h6>
-                <h2>Our Recent Blog Posts</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="carousel-content">
-            <div class="carousel-outer">
-                <div class="owl-carousel owl-theme">
-                    {% for details in product_list %} 
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{{details.image.url}}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">{{details.created_at.date}}</span>
-                                <h5 class="text-white">{{details.category_name}}</h5>
-                             <!-- <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %} 
-                   
+    <figure class="light-image mb-0">
+        <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
+    </figure>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog_content" data-aos="fade-up">
+                    <h6>Latest News</h6>
+                    <h2>Our Recent Blogs</h2>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="carousel-content">
+                {% for details in post_list %}
+                <div class="carousel-outer">
+
+                    <div class="owl-carousel owl-theme">
+    
+                        
+    
+                        <div class="item">
+                            <div class="image">
+                                <figure class="mb-0">
+                                    <img src="{{details.image.url}}" class="img-fluid" alt="">
+                                </figure>
+                                <div class="box-content">
+                                    <span class="text-size-16">{{details.created_at.date}}</span>
+                                    <h5 class="text-white">{{details.title}}</h5>
+                                   <!-- <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+                {% endfor %} 
+            </div>
+        </div>
     </div>
-</div>
-</section>
+    </section>
 <div class="copyright">
     <div class="container">
         <div class="row">
@@ -216,6 +193,5 @@
     </div>
 </div>
 </section>
-
 
 {% endblock body %}

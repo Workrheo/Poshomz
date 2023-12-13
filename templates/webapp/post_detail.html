@@ -41,9 +41,22 @@
         <div class="col-lg-8 col-md-12 col-sm-12 col-12">
             <div class="main-box">
                 <figure class="image1">
-                    <img src="{% static 'assets/images/singleblog-image1.jpg' %}" alt="" class="img-fluid">
+                    <img src="{{post_detail.image.url}}" alt="" class="img-fluid">
                 </figure>
                 <div class="content1">
+                    <p>{{post_detail.content}}</p>
+                    <h4>{{post_detail.title1}}</h4>
+                    <p>{{post_detail.content1}}</p>
+                    <h4>{{post_detail.title2}}</h4>
+                    <p>{{post_detail.content2}}</p>
+                    <h4>{{post_detail.title3}}</h4>
+                    <p>{{post_detail.content3}}</p>
+                    <h4>{{post_detail.title4}}</h4>
+                    <p>{{post_detail.content4}}</p>
+                    <h4>{{post_detail.title5}}</h4>
+                    <p>{{post_detail.content5}}</p>
+                </div>
+               <!--- <div class="content1">
                     <h4>Why You Need Virtual Assistant for Your Company</h4>
                     <i class="fa-solid fa-user"></i>
                     <span class="text-size-14 text-mr">By : Admin</span>
@@ -54,7 +67,7 @@
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
                         mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
-                </div>
+                </div> -->
           <!--      <div class="content2">
                     <figure class="singleblog-quoteimage">
                         <img src="{% static 'assets/images/singleblog-quoteimage.png' %}" alt="" class="img-fluid">

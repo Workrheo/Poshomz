@@ -296,7 +296,7 @@
     </figure>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 md-12">
                 <div class="blog_content" data-aos="fade-up">
                     <h6>Latest News</h6>
                     <h2>Our Recent Blog Posts</h2>
@@ -306,10 +306,8 @@
         <div class="row">
             <div class="carousel-content">
                 <div class="carousel-outer">
-                   <div class="owl-carousel owl-theme">
-    
-                      {% for details in product_list %} 
-    
+                    <div class="owl-carousel owl-theme">
+                        {% for details in post_list %} 
                         <div class="item">
                             <div class="image">
                                 <figure class="mb-0">
@@ -317,12 +315,13 @@
                                 </figure>
                                 <div class="box-content">
                                     <span class="text-size-16">{{details.created_at.date}}</span>
-                                    <h5 class="text-white">{{details.category_name}}</h5>
-                                   <!-- <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
+                                    <h5 class="text-white">{{details.title}}</h5>
+                                   <!---<p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
                                 </div>
                             </div>
                         </div>
-                      {% endfor %} 
+                        {% endfor %} 
+                    
                     </div>
                 </div>
             </div>
