@@ -13,12 +13,13 @@
                 <div class="banner_content" data-aos="fade-left">
                     <div class="content">
                         <h1>Aristo Products</h1>
-                        <p>Nuis aute irure dolor in rearehenderit in eouta velireu esse fugiat nulla pariatur.</p>
-                        <div class="box">
+                        <p>{{product_detail.description}}</p>
+                        
+                       <!-- <div class="box">
                             <span class="mb-0">Home</span>
                             <span class="mb-0 dash">-</span>
                             <span class="mb-0 box_span">Aristo Product Categories/span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -57,10 +58,10 @@
                             <h5 class="text-white">{{details.category_name}}</h5>
                         </div>
                         <div class="button-portion ">
-                            <div class="date">
+                           <!-- <div class="date">
                                 <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
                                 <span class="mb-0 text-size-14">{{details.created_at.date}}</span>
-                            </div>
+                            </div>-->
                           <!--  <div class="button">
                                 <a class="mb-0 read_more text-decoration-none" href="./single-blog.html">Read More</a>
                             </div> -->
@@ -146,15 +147,5 @@
     </section>
 </section>
 
-<div class="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <p class="text-size-14">Copyright © 2023 merrakiinteriors All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
 
 {% endblock body %}

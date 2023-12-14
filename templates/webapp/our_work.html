@@ -14,12 +14,12 @@
                 <div class="banner_content" data-aos="fade-left">
                     <div class="content">
                         <h1>Our Work</h1>
-                        <p>Guis aute irure dolor in rearehenderit in eouta velireu esse fugiat nulla pariatur.</p>
-                        <div class="box">
+                        
+                       <!-- <div class="box">
                             <span class="mb-0">Home</span>
                             <span class="mb-0 dash">-</span>
                             <span class="mb-0 box_span">Portfolio</span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -151,57 +151,6 @@
 </div>
 </section>
 <!-- Blog -->
-<section class="blog-section">
-    <figure class="light-image mb-0">
-        <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-    </figure>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="blog_content" data-aos="fade-up">
-                    <h6>Latest News</h6>
-                    <h2>Our Recent Blogs</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="carousel-content">
-                {% for details in post_list %}
-                <div class="carousel-outer">
 
-                    <div class="owl-carousel owl-theme">
-    
-                        
-    
-                        <div class="item">
-                            <div class="image">
-                                <figure class="mb-0">
-                                    <img src="{{details.image.url}}" class="img-fluid" alt="">
-                                </figure>
-                                <div class="box-content">
-                                    <span class="text-size-16">{{details.created_at.date}}</span>
-                                    <h5 class="text-white">{{details.title}}</h5>
-                                   <!-- <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
-                                </div>
-                            </div>
-                        </div>
-                     
-                    </div>
-                </div>
-                {% endfor %} 
-            </div>
-        </div>
-    </div>
-    </section>
-<div class="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <p class="text-size-14">Copyright © 2023 merrakiinteriors All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
 
 {% endblock body %}

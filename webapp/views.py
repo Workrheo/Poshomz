@@ -1,5 +1,5 @@
 from django.shortcuts import render , redirect
-from .models import Testimonials , Team,  Post, Category , Comment , Our_WORKS_CATEGORY , WorkItem , Our_STYLE_CATEGORY , StyleItem , Product , PRODUCT_CATEGORY , ContactDetails
+from .models import Testimonials ,Client, Team,  Post, Category , Comment , Our_WORKS_CATEGORY , WorkItem , Our_STYLE_CATEGORY , StyleItem , Product , PRODUCT_CATEGORY , ContactDetails
 from .forms import CommentForm , ContactForm
 from django.core.paginator import Paginator
 from django.core.mail import send_mail as sm 
@@ -39,10 +39,10 @@ def about(request):
     team_list = Team.objects.all()
     testimonials = Testimonials.objects.all()
     product_list = PRODUCT_CATEGORY.objects.all()
-
+    client_list = Client.objects.all()
 
     context = {'meta_title': 'About Combine Design | Transforming Spaces', 'product_list':product_list,
-                'post_list' : post_list ,'team_list':team_list, 'testimonials' : testimonials ,
+                'post_list' : post_list ,'team_list':team_list, 'testimonials' : testimonials , 'client_list' : client_list,
                'meta_description': 'Transforming spaces with personalized designs in Bengaluru. Discover inspired living with Combine Design.'
                }
 

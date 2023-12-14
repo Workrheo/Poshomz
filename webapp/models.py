@@ -18,7 +18,19 @@ class Testimonials(models.Model):
         return self.name
     
 
+class Client(models.Model):
+    name = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='testimonials')
+    
 
+
+
+
+
+    
+    def __str__(self):
+        return self.name
+    
 
 
 class Team(models.Model):
@@ -173,6 +185,7 @@ class StyleItem(models.Model):
 class PRODUCT_CATEGORY(models.Model):
     category_name = models.CharField(max_length=1000 , null=True , blank=True)
     image = models.ImageField(upload_to='Our_Works' , null=True , blank=True)
+    description = models.TextField(null=True ,blank=True)
     meta_title = models.CharField(max_length=1000 ,null=True ,blank=True)
     meta_description = models.TextField(null=True , blank=True)
 
