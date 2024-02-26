@@ -7,150 +7,65 @@
 
 
 
-<section class="banner-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
-                <div class="banner_content" data-aos="fade-left">
-                    <div class="content">
-                        <h1>Our Work</h1>
-                        
-                       <!-- <div class="box">
-                            <span class="mb-0">Home</span>
-                            <span class="mb-0 dash">-</span>
-                            <span class="mb-0 box_span">Portfolio</span>
-                        </div> -->
+
+
+<!--Start breadcrumb area-->     
+<section class="breadcrumb-area" style="background-image: url({% static 'images/breadcrumb/breadcrumb-bg.jpg' %});">
+	<div class="container-fluid text-center">
+		<h1>Our Work</h1>
+		<div class="breadcrumb-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="#">our work</a></li>
+                               
+                            </ul>    
+                        </div>
+                         
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
-                <div class="banner_wrapper">
-                    <figure class="sub-bannerimage mb-0" data-aos="fade-up">
-                        <img src="{% static 'assets/images/portfolio-bannerimage.jpg' %}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
-</div>
-<!-- Portfolio -->
-<section class="portfolio-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="subheading" data-aos="fade-right">
-                <h6>What’s New</h6>
-                <h2>Recent Designs We Have Done</h2>
-            </div>
-        </div>
-    </div>
-   
-
-   
-        <div class="tab-content">
-            <div id="all" class="tab-pane fade in active show">
-                <div class="row position-relative" data-aos="fade-up">
-                    {% for details in work_list %}
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                        <div class="image">
-                            <figure class="tab-image mb-0">
-                                <img src="{{details.category_image.url}}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <div class="content">
-                                    <span class="text-white text-size-16">MERAKI</span>
-                                    <h4 class="text-white">{{details.category_name}}</h4>
-                                    <a class="text-decoration-none" href="{% url 'webapp:our_work_detail' details.id %}">
-                                        <figure class="arrow mb-0">
-                                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
+<!--End breadcrumb area-->
+                                              
+<!--Start project classic v2 area--> 
+<section id="project-area" class="pro-classic-v2-area">
+    <div class="container">
+       
+        <div class="row project-content masonary-layout filter-layout">
+            {% for details in work_list %}
+            <div class="single-project-item col-md-4 col-sm-4 col-xs-12 filter-item commer indus corp">
+                <div class="img-holder">
+                    <img src="{{ details.category_image.url }}" alt="Awesome Image">
+                    <div class="overlay-style-2">
+                        <div class="box">
+                            <div class="content">
+                                <div class="text-holder">
+                                    <a href="{% url 'webapp:our_work_detail' details.id %}"><h3>{{ details }}</h3></a>
+                                    <p></p>
+                                </div>
+                                <div class="icon-holder">
+                                    <a href="{{ details.category_image.url }}" data-rel="prettyPhoto" title="Interrio Project"><i class="fa fa-camera"></i></a>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    {% endfor %}
-                </div>
-            </div>  
-        </div>
-       
-   
-</div>
-</section>
-<!-- Testimonial -->
-<section class="testimonial-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="testimonial_content" data-aos="fade-right">
-                <h6>Testimonials</h6>
-             <!--   <h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="owl-carousel owl-theme">
-            {% for details in testimonials %}
-            <div class="item">
-                <div class="box">
-                  <!--- <div class="image">
-                        <figure class="testimonial-image mb-0">
-                            <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>             -->       
-                    <div class="box-content">
-                        <p class="text-size-18">{{details.content}}</p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">{{details.name}}</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{{details.image.url}}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
                     </div>
-                </div>
+                </div>   
             </div>
             {% endfor %}
-        </div>
-    </div>
-</div>
-</section>
-<!-- Journey -->
-<section class="journey-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="journey_content" data-aos="fade-right">
-                <h6>Work With Us</h6>
-                <h2>Start Your Customer Journey With Us.</h2>
-            </div>
-            <div class="journey-button">
-                <a class="get_started text-decoration-none" href="{% url 'webapp:contact' %}">Get Started</a>
-                <a class="image-button text-decoration-none" href="{% url 'webapp:contact' %}">
-                    <figure class="arrow mb-0">
-                        <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                    </figure>
-                </a> 
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<!-- Blog -->
+            <!--End single project item-->
 
+            <!--End single project item-->  
+        </div>
+      
+    </div>
+</section>                            
+<!--End project classic v2 area--> 
 
 {% endblock body %}

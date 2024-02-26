@@ -1,0 +1,476 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block body %}
+
+<!--Start breadcrumb area-->     
+<section class="breadcrumb-area" style="background-image: url({% static 'images/breadcrumb/breadcrumb-bg.jpg' %});">
+	<div class="container-fluid text-center">
+		<h1>Shop Fullwidth</h1>
+		<div class="breadcrumb-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li>Shop Fullwidth</li>
+                            </ul>    
+                        </div>
+                        <div class="right pull-right">
+                            <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Get a Quote</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</section>
+<!--End breadcrumb area-->
+ 
+<!--Start shop area-->
+<section class="shop-area">
+    <div class="container">
+        <div class="row showing-result-shorting">
+            <div class="col-md-12">
+                <div class="showing pull-left">
+                    <p>Showing 1-12 of 15 results</p>
+                </div>
+                <div class="shorting pull-right">
+                    <select class="selectmenu">
+                        <option selected="selected">Default Sorting</option>
+                        <option>Default Sorting one</option>
+                        <option>Default Sorting Two</option>
+                        <option>Default Sorting Three</option>
+                    </select>
+                </div>      
+            </div>
+        </div>
+        <div class="row">
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/1.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Wooden Chair</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$34.99</h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/2.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Bedroom Lamp</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$19.99<del class="before-rate">$29.00</del></h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/3.jpg' %}" alt="Awesome Image">
+                        <div class="new-item">
+                            <p>New</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Laptop Table</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$24.00</h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/4.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Arm Desk Lamp</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$20.00</h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/5.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Birdcadge Tree</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$24.00</h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/6.jpg' %}" alt="Awesome Image">
+                        <div class="new-item">
+                            <p>New</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Stackable Table</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$20.00</h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/7.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Mountain Leaves</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$19.99<del class="before-rate">$29.00</del></h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/8.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Dining Chair</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$34.99</h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/9.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Wireless Lamp</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$19.99<del class="before-rate">$29.00</del></h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/10.jpg' %}" alt="Awesome Image">
+                        <div class="new-item">
+                            <p>New</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Working Chair</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$24.00</h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/11.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Gardern Lamp</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$19.99<del class="before-rate">$29.00</del></h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+            <!--Start single shop item-->
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="single-shop-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/shop/12.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="shop-single.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-holder">
+                        <div class="top clearfix">
+                            <div class="product-title pull-left">
+                                <h5>Artificial Tree</h5>
+                            </div>
+                            <div class="review-box pull-right">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star-half-o"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>$20.00</h4>
+                    </div>
+                </div>
+            </div>
+            <!--End single shop item-->
+        </div>
+        <div class="row">
+            <div class="col-md-12"> 
+                <ul class="post-pagination text-center">
+                    <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+</section>                 
+<!--End shop area-->  
+
+{% endblock body %}

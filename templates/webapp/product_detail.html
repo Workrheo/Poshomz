@@ -5,147 +5,65 @@
 
 {% block body %}
 
-            
-<section class="banner-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
-                <div class="banner_content" data-aos="fade-left">
-                    <div class="content">
-                        <h1>Aristo Products</h1>
-                        <p>{{product_detail.description}}</p>
-                        
-                       <!-- <div class="box">
-                            <span class="mb-0">Home</span>
-                            <span class="mb-0 dash">-</span>
-                            <span class="mb-0 box_span">Aristo Product Categories/span>
-                        </div>-->
+
+<!--Start breadcrumb area-->     
+<section class="breadcrumb-area" style="background-image: url({% static 'images/breadcrumb/breadcrumb-bg.jpg' %});">
+	<div class="container-fluid text-center">
+		<h1>{{product_detail}} products</h1>
+		<div class="breadcrumb-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="#">{{product_detail}} products</a></li>
+                               
+                            </ul>    
+                        </div>
+                       
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
-                <div class="banner_wrapper">
-                    <figure class="sub-bannerimage mb-0" data-aos="fade-up">
-                        <img src="{% static 'assets/images/about-bannerimage.jpg' %}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
-</div>
-<!-- MAIN SECTION -->
-<!--End Slider Section-->
-<section class="blog-posts blogpage-section">
-<div class="container">
-    <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-        <div id="blog" class="col-xl-12">
-            <!-- threecolumn-blog  -->
-            <div class="row">
-
-            {% for details in product_list %}
-                
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="blog-box blog-box1">
-                        <figure class="blog-image mb-0">
-                            <img src="{{details.image.url}}" alt="" class="img-fluid">
-                        </figure>
-                        <div class="lower-portion">
-                            <i class="fa-solid fa-user"></i>
-                            <span class="text-size-14 text-mr">By : Aristo </span>
-                            <i class="tag-mb fa-solid fa-tag"></i>
-                            <span class="text-size-14">{{details.product_name}}</span>
-                            <h5 class="text-white">{{details.category_name}}</h5>
-                        </div>
-                        <div class="button-portion ">
-                           <!-- <div class="date">
-                                <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
-                                <span class="mb-0 text-size-14">{{details.created_at.date}}</span>
-                            </div>-->
-                          <!--  <div class="button">
-                                <a class="mb-0 read_more text-decoration-none" href="./single-blog.html">Read More</a>
-                            </div> -->
-                        </div>
-
-                        
-                        
-                    </div>
-                </div>
-               {% endfor %}
-          
-        </div>
-    </div>
-</div>
-</section>
-<!-- Testimonial -->
-<section class="testimonial-section">
-    <figure class="light-image mb-0">
-        <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-    </figure>
+<!--End breadcrumb area-->
+                                              
+<!--Start project grid v1 area--> 
+<section id="project-grid-area" class="pro-grid-v1-area">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="testimonial_content" data-aos="fade-right">
-                    <h6>Testimonials</h6>
-                    <!--<h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="owl-carousel owl-theme">
-               
-              
-                {% for details in testimonials %}
-                <div class="item">
-                    <div class="box">
-                       <!-- <div class="image">
-                            <figure class="testimonial-image1 mb-0">
-                                <img src="{{details.image.url}}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image2 mb-0">
-                                <img src="{{details.image.url}}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image3 mb-0">
-                                <img src="{% static 'assets/images/testimonial-5.png' %}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image4 mb-0">
-                                <img src="{% static 'assets/images/testimonial-3.png' %}" alt="" class="img-fluid">
-                            </figure>
-                            <figure class="testimonial-image5 mb-0">
-                                <img src="{% static 'assets/images/testimonial-4.png' %}" alt="" class="img-fluid">
-                            </figure>
-                            <figure class="quote-icon mb-0">
-                                <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>     -->               
-                        <div class="box-content">
-                            <p class="text-size-18">
-                                {{details.content}}
-                              </p>
-                            <ul class="list-unstyled mb-0">
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            </ul>
-                            <div class="lower-portion">
-                                <span class="text-white text-size-16">{{details.name}}</span>
-                                <span class="text-size-14">Happy Customer</span>
-                                <figure class="quote-image mb-0">
-                                    <img src="{{details.image.url}}" class="img-fluid" alt="">
-                                </figure>
+      
+        <div class="row project-content masonary-layout filter-layout">
+            {% for details in product_list %}
+            <!--Start single project item-->
+            <div class="single-project-item col-md-6 col-sm-6 col-xs-12 filter-item resid commer resid">
+                <div class="img-holder">
+                    <a href="{{details.image.url}}"> <img src="{{details.image.url}}" alt="Awesome Image"></a>
+                   
+                        <div class="box">
+                            <div class="content">
+                                
+                               
+                                <div class="icon-holder">
+                                    <a href="{{details.image.url}}" data-rel="prettyPhoto" title="Interrio Project"><i class="fa fa-camera"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                {% endfor %}
-                
+                   
+                </div>   
             </div>
+            {% endfor %}
+            <!--End single project item-->
+           
+           
+            
         </div>
     </div>
-    </section>
-</section>
+</section>                            
+<!--End project grid v1 area--> 
+                                     
 
 
 {% endblock body %}

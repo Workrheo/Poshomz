@@ -219,7 +219,7 @@ def contact(request):
             message = contact_form.cleaned_data['message']
 
             try : 
-                sm(subject , message ,from_email , [' merakihomes2022@gmail.com'] )
+                sm(subject , message ,from_email , ['srushtiha2001@gmail.com'] )
             
             except BadHeaderError : 
                 return HttpResponse('ivalid header')

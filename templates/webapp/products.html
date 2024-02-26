@@ -8,121 +8,64 @@
 
 
 
-<section class="banner-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
-                <div class="banner_content" data-aos="fade-left">
-                    <div class="content">
-                        <h1>Our Products</h1>
-                        
-                        <!--<div class="box">
-                            <span class="mb-0">Home</span>
-                            <span class="mb-0 dash">-</span>
-                            <span class="mb-0 box_span">Services</span>
-                        </div> -->
+
+<!--Start breadcrumb area-->     
+<section class="breadcrumb-area" style="background-image: url({% static 'images/breadcrumb/breadcrumb-bg.jpg' %});">
+	<div class="container-fluid text-center">
+		<h1>Aristo Product</h1>
+		<div class="breadcrumb-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="#">Aristo products</a></li>
+                                
+                            </ul>    
+                        </div>
+                       
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
-                <div class="banner_wrapper">
-                    <figure class="sub-bannerimage mb-0" data-aos="fade-up">
-                        <img src="{% static 'assets/images/service-bannerimage.jpg' %}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
-</div>
-<!-- Service -->
-<section class="servicepage-section">
-<div class="container">
-    <div class="row" data-aos="fade-up">
-
-
-        {% for details in product_list  %}
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="service-box">
-                <div class="box-image">
-                    <figure class="mb-0 servicepage-image">
-                        <img src="{{details.image.url}}" class="img-fluid" alt="">
-                    </figure>
-                    
-                </div>
-                <div class="box-content">
-                    <h5 class="text-white">{{details.category_name}}</h5>
-                    <p class="text-size-16">{{details.description}}</p>
-                    <a class="read_more text-decoration-none" href="{% url 'webapp:product_detail' details.id %}">Read More
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div> 
-        </div>
-        {% endfor %}
+<!--End breadcrumb area-->
+                                              
+<!--Start project classic v2 area--> 
+<section id="project-area" class="pro-classic-v2-area">
+    <div class="container">
         
-    </div>
-</div>
-</section>
-<!-- Successful work -->
-<section class="work-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="work_content">
-                <div class="year">
-                    <span class="value counter">10</span>
-                    <sup class="mb-0 plus">+</sup>
-                </div>
-                <h2>Years of Successful Work in Market</h2>
-                <div class="discover-button">
-                    <a class="discover_more text-decoration-none" href="{% url 'webapp:our_work' %}">Discover More</a>
-                    <a class="image-button text-decoration-none" href="{% url 'webapp:our_work' %}">
-                        <figure class="arrow mb-0">
-                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                        </figure>
-                    </a> 
-                </div>
+        <div class="row project-content masonary-layout filter-layout">
+            {% for details in product_list  %}
+            <div class="single-project-item col-md-4 col-sm-4 col-xs-12 filter-item commer indus corp">
+                <div class="img-holder">
+                    <img src="{{details.image.url}}" alt="Awesome Image">
+                    <div class="overlay-style-2">
+                        <div class="box">
+                            <div class="content">
+                                <div class="text-holder">
+                                    <a href="{% url 'webapp:product_detail' details.id %}"><h3>{{ details.category_name }}</h3></a>
+                                    <p></p>
+                                </div>
+                                <div class="icon-holder">
+                                    <a href="{{ details.category_image.url }}" data-rel="prettyPhoto" title="Interrio Project"><i class="fa fa-camera"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
             </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="work_wrapper">
-                <figure class="work-image mb-0" data-aos="fade-right">
-                    <img src="{% static 'assets/images/work-image.jpg' %}" alt="" class="img-fluid">
-                </figure>
-                <figure class="work-imagebackground mb-0" data-aos="fade-up">
-                    <img src="{% static 'assets/images/work-imagebackground.jpg' %}" alt="" class="img-fluid">
-                </figure>
-            </div> 
-        </div>
-    </div>
-</div>
-</section>
-<!-- Journey -->
-<section class="journey-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="journey_content" data-aos="fade-right">
-                <h6>Work With Us</h6>
-                <h2>Start Your Customer Journey With Us.</h2>
-            </div>
-            <div class="journey-button">
-                <a class="get_started text-decoration-none" href="./contact.html">Get Started</a>
-                <a class="image-button text-decoration-none" href="./contact.html">
-                    <figure class="arrow mb-0">
-                        <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                    </figure>
-                </a> 
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+            {% endfor %}
+            <!--End single project item-->
 
-
+            <!--End single project item-->  
+        </div>
+       
+    </div>
+</section>                            
+<!--End project classic v2 area--> 
 
 {% endblock body %}

@@ -5,495 +5,502 @@
 
 {% block body %}
 
-<div class="social-icons position-relative">
-    <figure class="line">
-        <img src="{% static 'assets/images/line-image.png' %}" alt="" class="img-fluid">
-    </figure>
-    <ul class="list-unstyled mb-0 position-absolute">
-        <li><a href="https://www.facebook.com/profile.php?id=100088716128424" class="text-decoration-none"><i class="fa-brands fa-facebook social-networks"></i></a></li>
-        <!-- <li><a href="https://www.instagram.com/merakihomz_blr/" class="text-decoration-none"><i class="fa-brands fa-twitter social-networks"></i></a></li> -->
-        <li><a href="https://www.instagram.com/merakihomz_blr/" class="text-decoration-none"><i class="fa-brands fa-instagram social-networks"></i></a></li>
-        <li><a href="https://www.linkedin.com/company/meraki-homz/" class="text-decoration-none"><i class="fa-brands fa-linkedin social-networks"></i></a></li>
-    </ul>
-</div>
-<section class="banner-section">
-    <figure class="banner-backgroundimage mb-0">
-        <img src="{% static 'assets/images/banner-backgroundimage.png' %}" alt="" class="img-fluid">
-    </figure>
-    <div class="container-fluid">
+<!--Start rev slider wrapper-->     
+<section class="rev_slider_wrapper">
+    <div id="slider1" class="rev_slider"  data-version="5.0">
+        <ul>
+           <li data-transition="slidingoverlayleft">
+                <img src="{% static 'images/slides/1.jpg' %}"  alt="" width="1920" height="800" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+                
+                <div class="tp-caption  tp-resizeme" 
+                    data-x="left" data-hoffset="0" 
+                    data-y="top" data-voffset="205" 
+                    data-transform_idle="o:1;"         
+                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                    data-splitin="none" 
+                    data-splitout="none"
+                    data-start="700">
+                    <div class="slide-content-box">
+                        <h1>Give Life For<br>Your Dream <span>Home</span></h1>
+                        <h3>Why Over <span>1,000,000+</span> Customers Have Choosen Interior</h3>
+                    </div>
+                </div>
+                <div class="tp-caption tp-resizeme" 
+                    data-x="left" data-hoffset="0" 
+                    data-y="top" data-voffset="475" 
+                    data-transform_idle="o:1;"                         
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
+                    data-splitin="none" 
+                    data-splitout="none" 
+                    data-responsive_offset="on"
+                    data-start="2300">
+                    <div class="slide-content-box">
+                        <div class="button">
+                            <a class="thm-btn bg-cl-1" href="">Our Services</a>     
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-caption tp-resizeme" 
+                    data-x="left" data-hoffset="199" 
+                    data-y="top" data-voffset="475" 
+                    data-transform_idle="o:1;"                         
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
+                    data-splitin="none" 
+                    data-splitout="none" 
+                    data-responsive_offset="on"
+                    data-start="2600">
+                    <div class="slide-content-box">
+                        <div class="button">
+                            <a class="thm-btn bdr" href="">Latest Projects</a>     
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li data-transition="slidingoverlayleft">
+                <img src="{% static 'images/slides/2.jpg' %}"  alt="" width="1920" height="800" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+                
+                <div class="tp-caption tp-resizeme"
+                    data-x="right" data-hoffset="0" 
+                    data-y="top" data-voffset="205" 
+                    data-transform_idle="o:1;"         
+                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                    data-splitin="none" 
+                    data-splitout="none"  
+                    data-start="500">
+                    <div class="slide-content-box">
+                        <h1>Being the best<br>decorators</h1>
+                        <h3>You can work with us from anywhere of the <span>united states</span></h3>
+                    </div>
+                </div>
+                <div class="tp-caption tp-resizeme" 
+                    data-x="right" data-hoffset="209" 
+                    data-y="top" data-voffset="475" 
+                    data-transform_idle="o:1;"                         
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
+                    data-splitin="none" 
+                    data-splitout="none" 
+                    data-responsive_offset="on"
+                    data-start="2300">
+                    <div class="slide-content-box">
+                        <div class="button">
+                            <a class="thm-btn bdr" href="">Latest Projects</a>     
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-caption tp-resizeme" 
+                    data-x="right" data-hoffset="436" 
+                    data-y="top" data-voffset="475" 
+                    data-transform_idle="o:1;"                         
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
+                    data-splitin="none" 
+                    data-splitout="none" 
+                    data-responsive_offset="on"
+                    data-start="2600">
+                    <div class="slide-content-box">
+                        <div class="button">
+                            <a class="thm-btn bg-cl-1" href="">Our Services</a>     
+                        </div>
+                    </div>
+                </div>    
+            </li>
+            <li data-transition="slidingoverlayleft">
+                <img src="{% static 'images/slides/1.jpg' %}"  alt="" width="1920" height="800" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+                
+                <div class="tp-caption  tp-resizeme" 
+                    data-x="left" data-hoffset="0" 
+                    data-y="top" data-voffset="205" 
+                    data-transform_idle="o:1;"         
+                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                    data-splitin="none" 
+                    data-splitout="none"
+                    data-start="700">
+                    <div class="slide-content-box">
+                        <h1>We Won Best<br>Designer <span>Awards</span></h1>
+                        <h3>Why Over <span>1,000,000+</span> Customers Have Choosen Interior</h3>
+                    </div>
+                </div>
+                <div class="tp-caption tp-resizeme" 
+                    data-x="left" data-hoffset="0" 
+                    data-y="top" data-voffset="475" 
+                    data-transform_idle="o:1;"                         
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
+                    data-splitin="none" 
+                    data-splitout="none" 
+                    data-responsive_offset="on"
+                    data-start="2300">
+                    <div class="slide-content-box">
+                        <div class="button">
+                            <a class="thm-btn bg-cl-1" href="">Our Services</a>     
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-caption tp-resizeme" 
+                    data-x="left" data-hoffset="199" 
+                    data-y="top" data-voffset="475" 
+                    data-transform_idle="o:1;"                         
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
+                    data-splitin="none" 
+                    data-splitout="none" 
+                    data-responsive_offset="on"
+                    data-start="2600">
+                    <div class="slide-content-box">
+                        <div class="button">
+                            <a class="thm-btn bdr" href="">Latest Projects</a>     
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+<!--End rev slider wrapper--> 
+    
+<!--Start welcome area-->
+<section class="welcome-area">
+    <div class="container clearfix">
+        <div class="sec-title">
+            <h2>Welcome to Interior</h2>
+            <span class="decor"></span>
+        </div>
         <div class="row">
-            <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12">                    
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="banner_content">
-                            <div class="content">
-                                <p>OUR EXPERTISE FOR</p>
-                                <h2>INTERIOR DESIGN</h2>
-                                
-                                <div class="discover-button">
-                                    <a class="discover_more text-decoration-none" href="{% url 'webapp:about' %}">Discover More</a>
-                                    <a class="image-button text-decoration-none" href="{% url 'webapp:about' %}">
-                                        <figure class="arrow mb-0">
-                                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                                        </figure>
-                                    </a> 
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="text-holder">
+                    <h3>We are the best Interior designer since 1975.</h3>
+                    <p>Interior brings 41 years of interior designs experience right to your home or office. Our design professionals are equipped to help you determine the products and design that work best for our customers within the colors and lighting of your surroundings more than your expectation.</p>
+                    <p>Since our meetings take place in your home or office, we’ll work with you to help visualize a design solution that aligns with your taste, space, and budget, Also our team will guide you.</p>
+                    <div class="bottom">
+                       <div class="button">
+                           <a class="thm-btn bg-cl-1" href="#">More About Us</a>
+                       </div>
+                       <div class="title">
+                           <h3>Request Quote: <span>freequote@gmail.com</span></h3>
+                       </div>     
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="gallery clearfix">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="video-gallery">
+                                <img src="{% static 'images/welcome/main-gallery.jpg' %}" alt="Awesome Video Gallery">
+                                <div class="overlay-gallery">
+                                    <div class="icon-holder">
+                                        <div class="icon">
+                                            <a class="video-fancybox" title="Interrio Gallery" href="https://www.youtube.com/watch?v=KssOT2QVg-M"><img src="{% static 'images/icon/play-btn.png' %}" alt="Play Button"/></a>   
+                                        </div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="banner_content">
-                            <div class="content">
-                                <p>FEATURED PROJECT</p>
-                                <h2>GREEN INTERIOR</p>
-                                <div class="discover-button">
-                                    <a class="discover_more text-decoration-none" href="{% url 'webapp:product' %}">Discover More</a>
-                                    <a class="image-button text-decoration-none" href="{% url 'webapp:product' %}">
-                                        <figure class="arrow mb-0">
-                                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                                        </figure>
-                                    </a> 
-                                </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="gallery-bg-img">
+                                <img src="{% static 'images/welcome/1.jpg' %}" alt="Awesome Image">
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="banner_content">
-                            <div class="content">
-                                <p>INTERIOR REMODELING TO MAKES</p>
-                                <h2>YOUR LIFE EASIER</h2>
-                                <div class="discover-button">
-                                    <a class="discover_more text-decoration-none" href="{% url 'webapp:post_list' %}">Discover More</a>
-                                    <a class="image-button text-decoration-none" href="{% url 'webapp:post_list' %}">
-                                        <figure class="arrow mb-0">
-                                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                                        </figure>
-                                    </a> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 col-12 d-lg-block d-none">
-            </div>
-        </div>
-    </div>
-</section>
-</div>
-<!-- Services -->
-<section class="service-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="service_content" data-aos="fade-right">
-                <h6>What We Do</h6>
-                <h2>Our Highlighted Services for Interior Designs</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="box-content">
-                <div class="upper_portion">
-                    <figure class="image mb-0">
-                        <img src="{% static 'assets/images/service-image1.jpg' %}" class="article_img" alt="">
-                    </figure>
-                   
-                </div>
-                <div class="lower_portion_wrapper">
-                    <div class="lower_portion">
-                        <h5 class="text-white">Interior Design</h5>
-                        <p class="text-size-16">Meraki strives to provide top-notch residential interior solutions. We specialize in providing end-to-end services..</p>
-                        <a class="read_more text-decoration-none" href="{% url 'webapp:product' %}">Read More
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="top-space">
-                <div class="box-content">
-                    <div class="upper_portion">
-                        <figure class="image mb-0">
-                            <img src="{% static 'assets/images/service-image2.jpg' %}" class="article_img" alt="">
-                        </figure>
-                        
-                    </div>
-                    <div class="lower_portion_wrapper">
-                        <div class="lower_portion">
-                            <h5 class="text-white">Renovation Design</h5>
-                            <p class="text-size-16">Does your home feel outdated and lack sufficient space? If yes, we've got a fantastic idea for you: go for a home renovation today..</p>
-                            <a class="read_more text-decoration-none" href="{% url 'webapp:product' %}">Read More
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>                
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="box-content">
-                <div class="upper_portion">
-                    <figure class="image mb-0">
-                        <img src="{% static 'assets/images/service-image3.jpg' %}" class="article_img" alt="">
-                    </figure>
-                   
-                </div>
-                <div class="lower_portion_wrapper">
-                    <div class="lower_portion">
-                        <h5 class="text-white">Soft Furnishing</h5>
-                        <p class="text-size-16">Lighting and soft furnishing adds the right amount of wow factor in your interiors. You are born to shine and so does your interior..</p>
-                        <a class="read_more text-decoration-none" href="{% url 'webapp:product' %}">Read More
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-                
-    </div>
-    <div class="explore-button">
-        <a class="explore text-decoration-none" href="{% url 'webapp:product' %}">Explore All Services</a>
-        <a class="image-button text-decoration-none" href="{% url 'webapp:product' %}">
-            <figure class="arrow mb-0">
-                <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-            </figure>
-        </a> 
-    </div>
-</div>
-</section>
-<!-- About us -->
-<section class="about-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 order-md-1 order-2">
-            <div class="about_wrapper">
-                <figure class="about-image1 mb-0" data-aos="fade-up">
-                    <img src="{% static 'assets/images/about-image1-new.png' %}" alt="" class="img-fluid">
-                </figure>
-                <div class="badge c-black" id="badge">
-                    <span class="badge__char"> </span>
-                    <span class="badge__char badge__char1">.</span>
-                    <span class="badge__char"> </span>
-                    <span class="badge__char">M</span>
-                    <span class="badge__char">E</span>
-                    <span class="badge__char">R</span>
-                    <span class="badge__char">A</span>	
-                    <span class="badge__char">K</span>	
-                    <span class="badge__char">I</span>		
-                    <span class="badge__char"></span>	
-                    <span class="badge__char badge__char1">.</span>	
-                    <span class="badge__char"> </span>		
-                    <span class="badge__char">H</span>		
-                    <span class="badge__char">O</span>		
-                    <span class="badge__char">M</span>		
-                    <span class="badge__char">Z</span>		
-                   <!-- <span class="badge__char"></span>
-                    <span class="badge__char"></span>		
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>
-                    <span class="badge__char"> </span>
-                    <span class="badge__char">-</span>
-                    <span class="badge__char"> </span>		
-                    <span class="badge__char"></span>		
-                    <span class="badge__char">/<span>		
-                    <span class="badge__char"></span>		
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>		
-                    <span class="badge__char"> </span>
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>		
-                    <span class="badge__char"></span>-->
-                    <figure class="about-logoimage mb-0">
-                        <img src="{% static 'assets/images/about-logoimage-new.png' %}" alt="" class="img-fluid">
-                    </figure>
-                </div> 
-            </div>     
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 col-12 order-md-2 order-3">
-            <div class="about_content" data-aos="fade-right">
-                <h6>About Us</h6>
-                <h2>WELCOME TO MERAKI HOMZ </h2>
-                <h5 class="text-white">Best Interior Designers Architectures for You.</h5>
-                <p>Choose your style at your comfort Meraki is a End to End interior design solution company located in bangalore, specialized in residential interior design.
-                    Whether you need a quick refresh of furniture, paint or wallpaper or an extensive full house renovation, we can provide the expertise to make sure the project runs smoothly and gives you the best results possible with in your budget.</p>
-                <div class="about-button">
-                    <a class="read_more text-decoration-none" href="{% url 'webapp:about' %}">Read More</a>
-                    <a class="image-button text-decoration-none" href="{% url 'webapp:about' %}">
-                        <figure class="arrow mb-0">
-                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                        </figure>
-                    </a> 
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 order-md-3 order-2">
-            <div class="about_wrapper">
-                <figure class="about-image2 mb-0" data-aos="fade-up">
-                    <img src="{% static 'assets/images/about-image2-new.png' %}" alt="" class="img-fluid">
-                </figure>
-            </div> 
-        </div>
-    </div>
-</div>
-</section>
-<!-- Process -->
-<section class="process-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="process_content" data-aos="fade-up">
-                <h2>OUR FEATURES</h2>
-                
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="box-content">
-                <figure class="icon mb-0">
-                    <img src="{% static 'assets/images/process-icon1.png' %}" class="img-fluid" alt="">
-                </figure>
-                <span>01</span>
-                <h5 class="text-white">Interior Design</h5>
-                <p class="text-size-18 mb-0">Meraki strives to provide top-notch residential interior solutions. We specialize in providing end-to-end services..</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="box-content">
-                <figure class="icon mb-0">
-                    <img src="{% static 'assets/images/process-icon2.png' %}" class="img-fluid" alt="">
-                </figure>
-                <span>02</span>
-                <h5 class="text-white">Renovation Design</h5>
-                <p class="text-size-18 mb-0">Does your home feel outdated and lack sufficient space? If yes, we've got a fantastic idea for you: go for a home renovation today..</p>
-            </div>               
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="box-content">
-                <figure class="icon mb-0">
-                    <img src="{% static 'assets/images/process-icon3.png' %}" class="img-fluid" alt="">
-                </figure>
-                <span>03</span>
-                <h5 class="text-white">Soft Furnishing</h5>
-                <p class="text-size-18 mb-0">Lighting and soft furnishing adds the right amount of wow factor in your interiors. You are born to shine and so does your interior..</p>
-            </div>
-        </div>         
-    </div>
-</div>
-</section>
-<!-- Successful work -->
-<section class="work-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="work_content">
-                <div class="year">
-                    <span class="value counter">10</span>
-                    <sup class="mb-0 plus">+</sup>
-                </div>
-                <h2>Years of Successful Work in Market</h2>
-                <div class="discover-button">
-                    <a class="discover_more text-decoration-none" href="{% url 'webapp:post_list' %}">Discover More</a>
-                    <a class="image-button text-decoration-none" href="{% url 'webapp:post_list' %}">
-                        <figure class="arrow mb-0">
-                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                        </figure>
-                    </a> 
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="work_wrapper">
-                <figure class="work-image mb-0" data-aos="fade-right">
-                    <img src="{% static 'assets/images/work-image.jpg' %}" alt="" class="img-fluid">
-                </figure>
-                <figure class="work-imagebackground mb-0" data-aos="fade-up">
-                    <img src="{% static 'assets/images/work-imagebackground.jpg' %}" alt="" class="img-fluid">
-                </figure>
-            </div> 
-        </div>
-    </div>
-</div>
-</section>
-<!-- Recent work -->
-<section class="recentwork-section">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="recentwork_content" data-aos="fade-up">
-                <h6>What’s New</h6>
-                <h2>Recent Work We Have Done</h2>
-            </div>
-        </div>
-    </div>
-  
-    <div class="recentwork-carousel owl-carousel">
-        {% for details in work_list %}
-        <div class="item">
-
-           
-            <div class="image">
-                <figure class="recentwork-image mb-0">
-                    <img src="{{details.category_image.url}}" class="img-fluid" alt="">
-                </figure>
-                <div class="box-content">
-                    <div class="content">
-                        <span class="text-white text-size-16">{{details}} Design</span>
-                       <!--- <h4 class="text-white">Kawa - Glamorous Penthouse</h4> -->
-                        <a class="text-decoration-none" href="{% url 'webapp:our_work' %}">
-                            <figure class="arrow mb-0">
-                                <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-        
-    </div>
-</div>
-</section>
-<!-- Testimonial -->
-<section class="testimonial-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="testimonial_content" data-aos="fade-right">
-                <h6>Testimonials</h6>
-                <!--<h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="owl-carousel owl-theme">
-           
-          
-            {% for details in testimonials %}
-            <div class="item">
-                <div class="box">
-                   <!-- <div class="image">
-                        <figure class="testimonial-image1 mb-0">
-                            <img src="{{details.image.url}}" alt="" class="img-fluid">
-                        </figure>                    
-                        <figure class="testimonial-image2 mb-0">
-                            <img src="{{details.image.url}}" alt="" class="img-fluid">
-                        </figure>                    
-                        <figure class="testimonial-image3 mb-0">
-                            <img src="{% static 'assets/images/testimonial-5.png' %}" alt="" class="img-fluid">
-                        </figure>                    
-                        <figure class="testimonial-image4 mb-0">
-                            <img src="{% static 'assets/images/testimonial-3.png' %}" alt="" class="img-fluid">
-                        </figure>
-                        <figure class="testimonial-image5 mb-0">
-                            <img src="{% static 'assets/images/testimonial-4.png' %}" alt="" class="img-fluid">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>     -->               
-                    <div class="box-content">
-                        <p class="text-size-18">
-                            {{details.content}}
-                          </p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">{{details.name}}</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{{details.image.url}}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
             
         </div>
     </div>
-</div>
 </section>
-<!-- Journey -->
-<section class="journey-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="journey_content" data-aos="fade-right">
-                <h6>Work With Us</h6>
-                <h2>Start Your Customer Journey With Us.</h2>
-            </div>
-            <div class="journey-button">
-                <a class="get_started text-decoration-none" href="{% url 'webapp:contact' %}">Get Started</a>
-                <a class="image-button text-decoration-none" href="{% url 'webapp:contact' %}">
-                    <figure class="arrow mb-0">
-                        <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                    </figure>
-                </a> 
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<!-- Blog -->
-<section class="blog-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="blog_content" data-aos="fade-up">
-                <h6>Latest Products</h6>
-                <h2>Our Recent products</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="carousel-content">
-            <div class="carousel-outer">
-                <div class="owl-carousel owl-theme">
+<!--End welcome area-->
 
-             {% for details in product_list %} 
-
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{{details.image.url}}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">{{details.created_at.date}}</span>
-                                <h5 class="text-white">{{details.category_name}}</h5>
-                               <!-- <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
+<!--Start service area-->
+<section class="service-area" style="background-image:url({% static 'images/services/bg.jpg' %});">
+    <div class="container">
+        <div class="sec-title">
+            <h2>Services We do</h2>
+            <span class="decor"></span>
+        </div>
+        <div class="row">
+            {% for details in work_list %}
+            <!--Start single service item-->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="single-service-item">
+                   
+                      <a href={{ details.category_image.url }}>  <img src="{{ details.category_image.url }}" alt="Awesome Image"><a/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="{% url 'webapp:our_work' %}"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                  {% endfor %} 
+                  
+                    <div class="text-holder">
+                        <a href="{% url 'webapp:our_work' %}"><h3>{{ details.category_name }}</h3></a>
+                        
+                    </div>    
                 </div>
             </div>
+            
+            {% endfor %}
         </div>
     </div>
-</div>
 </section>
+<!--End service area-->
+
+<!--Start latest project area-->
+<!--<section class="latest-project-area">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="sec-title pull-left">
+                <h2>Latest <span>Projects</span></h2>
+                <span class="decor"></span>
+            </div>   
+           
+        </div>
+        <div class="row project-content masonary-layout filter-layout">
+            <!--Start single project
+            <div class="col-md-3 col-sm-6 col-xs-12 filter-item corporate residential industrial">
+                <div class="single-project-item">
+                    <div class="img-holder">
+                        <img src="{% static 'images/project/lat-pj-1.jpg' %}" alt="Awesome Image">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="project-single-v1.html"><h3>Modern Living Room</h3></a>
+                                    <p>Residential</p>
+                                    <div class="icon-holder">
+                                        <a href="{% static 'images/project/lat-pj-1.jpg' %}" data-rel="prettyPhoto" title="Interrio Project"><i class="fa fa-camera"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+           
+        </div>     
+    </div>
+</section>-->
+<!--End latest project area-->
+
+<!--Start slogan area-->
+<section class="slogan-area" style="background-image:url({% static 'images/resources/slogan.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slogan">
+                    <h2>Being the largest in-home decorationg service in newyork city, you can work with us from anywhere!</h2>
+                </div>
+            </div>
+        </div>     
+    </div>
+</section>
+<!--End slogan area-->
+
+<!--Start working area-->
+<section class="working-area">
+    <div class="container">
+        <div class="sec-title text-center">
+            <h2>Our Working Process</h2>
+            <p>We've distilled our interior design process into 4 Steps – the same steps we have been using for more than 41 years, In this steps, the designer visits your home to gather more.</p>
+        </div>  
+        <div class="row">
+            <!--Start single working item-->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-working-item">
+                   <div class="icon-box">
+                        <div class="icon">
+                            <span class="flaticon-people"></span>
+                        </div>
+                        <div class="count">
+                            <h3>1</h3>
+                        </div>    
+                   </div>
+                   <div class="text-box text-center">
+                       <h3>Meet Customers</h3>
+                       <p>Our designers will meet the customer to gather more Information.</p>
+                   </div>     
+                </div>
+            </div>
+            <!--End single working item-->
+            <!--Start single working item-->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-working-item">
+                   <div class="icon-box">
+                        <div class="icon">
+                            <span class="flaticon-people"></span>
+                        </div>
+                        <div class="count">
+                            <h3>2</h3>
+                        </div>    
+                   </div>
+                   <div class="text-box text-center">
+                       <h3>Meet Customers</h3>
+                       <p>Our designers will meet the customer to gather more Information.</p>
+                   </div>     
+                </div>
+            </div>
+            <!--End single working item-->
+            <!--Start single working item-->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-working-item">
+                   <div class="icon-box">
+                        <div class="icon">
+                            <span class="flaticon-people"></span>
+                        </div>
+                        <div class="count">
+                            <h3>3</h3>
+                        </div>    
+                   </div>
+                   <div class="text-box text-center">
+                       <h3>Meet Customers</h3>
+                       <p>Our designers will meet the customer to gather more Information.</p>
+                   </div>     
+                </div>
+            </div>
+            <!--End single working item-->
+            <!--Start single working item-->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-working-item">
+                   <div class="icon-box">
+                        <div class="icon">
+                            <span class="flaticon-people"></span>
+                        </div>
+                        <div class="count">
+                            <h3>4</h3>
+                        </div>    
+                   </div>
+                   <div class="text-box text-center">
+                       <h3>Meet Customers</h3>
+                       <p>Our designers will meet the customer to gather more Information.</p>
+                   </div>     
+                </div>
+            </div>
+            <!--End single working item-->
+        </div>
+    </div>
+</section>
+<!--End working area-->
+
+<!--Start testimonial area-->
+<section class="testimonial-area">
+    <div class="container">
+        <div class="sec-title text-center">
+            <h2>Customers Feedback</h2>
+            <span class="border"></span>
+        </div>
+        <div class="row">
+            
+            <div class="col-md-12">
+               
+                <div class="testimonials-carousel">
+                    <!--Start single slide item-->
+                    {% for details in testimonials %}
+                    <div class="single-slide-item">
+                        
+                        <div class="img-box">
+                            <img src="{{details.image.url}}" alt="Awesome Image">
+                            
+                            <div class="review-box">
+                                <span>Project Rating:</span>
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <span class="flaticon-right"></span>
+                            <div class="text">
+                                <p>{{details.content}}</p>
+                                <h3>{{details.name}}</h3>
+                                <h4>Happy customer</h4>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!--End single slide item-->
+                    {% endfor %}
+                </div>
+               
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!--End testimonial area-->
+
+<!--Start latest blog area-->
+<section class="latest-blog-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sec-title pull-left">
+                    <h2>Latest <span>News</span></h2>
+                    <span class="decor"></span>
+                </div>
+                <div class="more-blog-button pull-right">
+                    <a class="thm-btn bg-cl-1" href="news-standard.html">More News</a> 
+                </div>
+            </div>
+        </div>   
+        <div class="row">
+            {% for post in post_list%}
+            <!--Start single blog item-->
+            <div class="col-md-4">
+                <div class="single-blog-item">
+                    <div class="img-holder">
+                        <img src="{{post.image.url}}" alt="Awesome Image">
+                        
+                    </div>
+                    <div class="text-holder">
+                        <a href="{% url 'webapp:post_list' %}">
+                            <h3 class="blog-title">{{post}}</h3>
+                        </a>
+                        
+                        
+                    </div>    
+                </div>    
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--End latest blog area-->
+ 
+<!--Start Brand area-->  
+<section class="brand-area">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-12">
+                {% for details in client_list %}
+                <div class="brand">
+                    <!--Start single item-->
+                    <div class="single-item">
+                        <a href="#"><img src="{{details.image.url}}" alt="Awesome Brand Image"></a>
+                    </div>
+                    <!--End single item-->
+                    
+                </div>
+                {% endfor %}
+            </div>
+           
+        </div>
+    </div>
+</section>
+<!--End Brand area--> 
 
 
 {% endblock body %}
